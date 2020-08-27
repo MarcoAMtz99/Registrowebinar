@@ -220,10 +220,10 @@
 								Director Ejecutivo de B&W Soluciones Integrales SA de CV.
 							</p>
 							<p class="text-grey-color">
-								Experto en Tecnologías de la Información, con mas de 20 años de experiencia.
+								Experto en las áreas de innovación tecnológica, inteligencia artificial, gestión de proyectos de TI, data analysis.
 							</p>
                             	<p class="text-grey-color">
-								Ingeniero en Sistemas Electrónicos del ITESM, maestria en Ingeniería en Sistemas digitales por parte de Heriot Watt University y Diplomado en Administración Financiera por parte del ITESM.
+									Cuenta con más de 20 años de experiencia en el área de Tecnologías de la Información.
 							</p>
 							<div class="clearfix">
 								
