@@ -38,16 +38,20 @@ class RegistroController extends Controller
     public function store(Request $request)
     {
         //
-       // dd($request->all());
+        
          $request->validate([
             'nombre'=>'required|string',
             'apellidos'=>'required|string',
             'celular'=>'required|int',
-            'correo'=>'required|string',
-            'telefono'=>'required|int',
-            'empresa'=>'required|string',
-            'puesto'=>'required|string|min:2|max:100'
+            'correo'=>'required|string'
         ]);
+        if ($request->telefono == null) {
+            $request->telefono ='';
+        } else {
+            $request->telefono = $request->telefono;
+        }
+        
+        
  
       /*   $users = new Registro();  
         $users->nombre = $request->nombre;
