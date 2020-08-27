@@ -51,7 +51,13 @@
                         <input type="text" name="puesto" class="form-control" value="{{old('puesto')}}" placeholder="Puesto en el que esta interesado">
                         <span class="help-block">{{$errors->first('puesto')}} </span>
                     </div>
-                         </div>                 
+                         </div>    
+                         
+                         <div class="col-sm-12 "> 
+                            <div class="form-group">
+                                <a href="http://download1494.mediafire.com/hqrjnptq5chg/vpt9d8ot8r6h9iw/Aviso+de+privacidad+B%26W.pdf">Terminos y condiciones</a>
+                             </div>
+                                 </div>        
                         <div class="col-sm-12 col-xs-12"> 
                     <div class="form-group">
                         <input type="submit" value="Enviar registro" class="btn btn-primary">

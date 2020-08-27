@@ -14,8 +14,7 @@ class RegistroController extends Controller
     public function index()
     {
         //
-        $registro = Registro::get();
-        return view('registro.index',compact('registro'));
+        return view('registro.create');
     }
 
     /**
