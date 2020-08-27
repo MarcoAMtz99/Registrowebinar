@@ -9,7 +9,7 @@
             <div class="alert alert-success">{{session('status')}}
                     </div>
                 @endif 
-                <form action="{{route('registro.store')}}" method="POST">
+                <form action="{{route('registro.store')}}" method="POST" id="miForm" name="fvalida" >
                     <div class="col-sm-6 col-xs-12">
                          <div class="form-group">
                                 <input type="text" name="nombre" id="nombre "class="form-control" value="{{old('nombre')}}" placeholder="*Nombre">
@@ -18,19 +18,19 @@
                     </div>
                     <div class="col-sm-6 col-xs-12">
                         <div class="form-group">
-                    <input type="text" name="apellidos" class="form-control" value="{{old('apellidos')}}" placeholder="*Apellidos">      
+                    <input type="text" name="apellidos" id="apellidos "class="form-control" value="{{old('apellidos')}}" placeholder="*Apellidos">      
                                     <span class="help-block">{{$errors->first('apellidos')}} </span>
                             </div>
                     </div>
                         <div class="col-sm-6 col-xs-12">                      
                     <div class="form-group">
-                        <input type="number" name="celular" class="form-control" value="{{old('celular')}}" placeholder="*Celular / Whatsapp">
+                        <input type="number" name="celular" id="celular "class="form-control" value="{{old('celular')}}" placeholder="*Celular / Whatsapp">
                         <span class="help-block">{{$errors->first('celular')}} </span>
                     </div>
                         </div> 
                         <div class="col-sm-6 col-xs-12"> 
                     <div class="form-group">
-                        <input type="text" name="correo" class="form-control" value="{{old('correo')}}" placeholder="*Correo electronico">
+                        <input type="text" name="correo" id="correo " class="form-control" value="{{old('correo')}}" placeholder="*Correo electronico">
                         <span class="help-block">{{$errors->first('correo')}} </span>
                     </div>
                         </div>  
@@ -64,7 +64,7 @@
                                  </div>        
                         <div class="col-sm-12 col-xs-12"> 
                     <div class="form-group">
-                        <input type="submit" value="Enviar registro" id="boton" class="btn btn-primary" disabled="disabled">
+                        <input type="submit" value="Enviar registro" id="boton" class="btn btn-primary" disabled="disabled" onclick="validar()">
                         
                     </div>
                     {{ csrf_field()}}
@@ -81,9 +81,37 @@
                     function acepto()
                     {
                         document.getElementById("boton").disabled=false;
+                        validar();
                        
                     }
-                    </script>
+                    function validar(){
+                        
+                        if (document.fvalida.nombre.value.length==0){
+      		            alert("El campo nombre es requerido por favor ingrese sus datos.");
+      		            document.fvalida.nombre.focus();
+      		            return 0;
+   	                    }
+                           if (document.fvalida.apellidos.value.length==0){
+      		            alert("El campo apellidos es requerido por favor ingrese sus datos.");
+      		            document.fvalida.apellidos.focus();
+      		            return 0;
+   	                    }
+                           if (document.fvalida.celular.value.length==0){
+      		            alert("El campo celular es requerido por favor ingrese sus datos.")
+      		            document.fvalida.celular.focus()
+      		            return 0;
+   	                    }
+                        if (document.fvalida.correo.value.length==0){
+      		            alert("El campo correo es requerido por favor ingrese sus datos.")
+      		            document.fvalida.correo.focus()
+      		            return 0;
+   	                    }
+                        alert("Muchas gracias registrarse al webinar");
+   	                        //document.fvalida.submit();
+                    }
+                    
+</script>
+                  
 
 
             </div> 
