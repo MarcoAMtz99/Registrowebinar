@@ -55,7 +55,8 @@
                          
                          <div class="col-sm-12 "> 
                             <div class="form-group">
-                                <a href="http://download1494.mediafire.com/hqrjnptq5chg/vpt9d8ot8r6h9iw/Aviso+de+privacidad+B%26W.pdf">Terminos y condiciones</a>
+                                <a href=" "></a>
+                                <a target="_blank" href="{{asset('files/Aviso de privacidad B&W.pdf')}}">Terminos y condiciones</a>
                              </div>
                                  </div>        
                         <div class="col-sm-12 col-xs-12"> 
