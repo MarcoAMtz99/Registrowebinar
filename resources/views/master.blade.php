@@ -217,13 +217,13 @@
 							<h5 class="text-normal">Msc. Luis H. Paniagua</h5>
 							<p class="designation text-light text-grey-color">Msc. Digital Systems Engineering</p>
 							<p class="text-grey-color">
-								Director de B&W Soluciones Integrales SA de CV.
+								Director Ejecutivo de B&W Soluciones Integrales SA de CV.
 							</p>
 							<p class="text-grey-color">
 								Experto en Tecnologías de la Información, con mas de 20 años de experiencia.
 							</p>
                             	<p class="text-grey-color">
-								Ingeniero en Sistemas Electrónicos del ITESM, maestria en Ingeniería en Sistemas Sigitales por parte de Heriot Watt University y Diplomado en Administración Financiera por parte del ITESM.
+								Ingeniero en Sistemas Electrónicos del ITESM, maestria en Ingeniería en Sistemas digitales por parte de Heriot Watt University y Diplomado en Administración Financiera por parte del ITESM.
 							</p>
 							<div class="clearfix">
 								
@@ -240,16 +240,17 @@
 							<img src="{{asset('images/team/Enrique_cortes.jpg')}}" alt="Image" class="img-responsive img-center-xs rc-5">
 						</div>
 						<div class="col-sm-6 col-xs-12">
-							<h5 class="text-normal">Mstro. Enrique Cortes</h5>
-                           	<p class="designation text-light text-grey-color">cambiar texto 1</p>
+							<h5 class="text-normal">Mstro. Enrique Cortés</h5>
+                           	<p class="designation text-light text-grey-color">Doctorante en teoría psicoanálitica</p>
 							<p class="text-grey-color">
-								cambiar texto 2.
+								Director RH B&W Soluciones Integrales SA de CV.
 							</p>
 							<p class="text-grey-color">
-								Experto en el estudio y análisis de la gestión por competencias y el trabajo colaborativo.
+								Experto en capacitación de equipo de trabajo de alto desempeño, ETD.
 							</p>
                             	<p class="text-grey-color">
-								cambiar texto 3
+									Evaluación por Competencias, Atención psicológica en depresión laboral, bajo desempeño y resolución de
+									conflictos.
 							</p>
 							<div class="clearfix">
 								
