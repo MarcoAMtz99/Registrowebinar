@@ -467,6 +467,7 @@
 	<!-- Template JS Files -->
 	<script src="js/jquery-1.12.4.min.js"></script>
 	<script src="js/jquery-migrate-1.4.1.min.js"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/plugins/backstretch/jquery.backstretch.min.js"></script>
 	<script src="js/plugins/shuffle/jquery.shuffle.modernizr.min.js"></script>
@@ -478,8 +479,7 @@
 	</body>
     
     
-    
-    
+	
     
     
     
@@ -487,3 +487,4 @@
     
     
 </html>
+

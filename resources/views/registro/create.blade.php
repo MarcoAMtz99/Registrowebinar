@@ -56,18 +56,34 @@
                          <div class="col-sm-12 "> 
                             <div class="form-group">
                                 
-                                <a target="_blank" href="{{asset('files/Aviso de privacidad B&W.pdf')}}">Terminos y condiciones</a>
+                               SI <input name="aviso" type="radio" value="SI" onclick="acepto()" />    
+                               NO <input name="aviso" type="radio" value="NO" onclick="negado()" />    
+                                <a target="_blank" href="{{asset('files/Aviso de privacidad B&W.pdf')}}">Acepto aviso de privacidad termino de condiciones</a>
                               
                              </div>
                                  </div>        
                         <div class="col-sm-12 col-xs-12"> 
                     <div class="form-group">
-                        <input type="submit" value="Enviar registro" class="btn btn-primary">
+                        <input type="submit" value="Enviar registro" id="boton" class="btn btn-primary" disabled="disabled">
+                        
                     </div>
                     {{ csrf_field()}}
                          </div>              
                 </form>
-
+                    
+    
+                <script>
+                    function negado()
+                    {
+                        document.getElementById("boton").disabled=true;
+                      
+                    }
+                    function acepto()
+                    {
+                        document.getElementById("boton").disabled=false;
+                       
+                    }
+                    </script>
 
 
             </div> 
