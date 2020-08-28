@@ -9,7 +9,7 @@
             <div class="alert alert-success">{{session('status')}}
                     </div>
                 @endif 
-                <form action="{{route('registro.store')}}" method="POST" id="miForm" name="fvalida" >
+                <form action="{{route('registro.store')}}" method="POST" id="miForm" name="fvalida"  onsubmit="return validar()">
                     <div class="col-sm-6 col-xs-12">
                          <div class="form-group">
                                 <input type="text" name="nombre" id="nombre "class="form-control" value="{{old('nombre')}}" placeholder="*Nombre">
@@ -64,7 +64,7 @@
                                  </div>        
                         <div class="col-sm-12 col-xs-12"> 
                     <div class="form-group">
-                        <input type="submit" value="Enviar registro" id="boton" class="btn btn-primary" disabled="disabled" onclick="validar()">
+                        <input type="submit" value="Enviar registro" id="boton" class="btn btn-primary" disabled="disabled" >
                         
                     </div>
                     {{ csrf_field()}}
@@ -81,34 +81,57 @@
                     function acepto()
                     {
                         document.getElementById("boton").disabled=false;
-                        validar();
-                       
+                                 
                     }
                     function validar(){
+                        var nombre = document.fvalida.nombre.value.length;
+                            var apellidos = document.fvalida.apellidos.value.length;
+                            var celular = document.fvalida.celular.value.length;
+                                var correo = document.fvalida.correo.value.length;
+                                 if (nombre === 0 || apellidos === 0 || celular === 0 || correo === 0) {
+                                     alert("Completa todos los campos requeridos \n *NOMBRE *APELLIDOS *CELULAR *CORREO");
+                                     /* document.fvalida.nombre.focus();
+                                     document.fvalida.apellidos.focus();
+                                     document.fvalida.celular.focus();
+                                     document.fvalida.correo.focus(); */
+                                     return false;
+                                             }else{ return true;
+                                        }
+                                        
+                                    }
+
+                 /*    function validarfff(){
                         
                         if (document.fvalida.nombre.value.length==0){
       		            alert("El campo nombre es requerido por favor ingrese sus datos.");
       		            document.fvalida.nombre.focus();
-      		            return 0;
+                          document.getElementById("boton").disabled=true;
+      		            return false;
    	                    }
                            if (document.fvalida.apellidos.value.length==0){
       		            alert("El campo apellidos es requerido por favor ingrese sus datos.");
       		            document.fvalida.apellidos.focus();
-      		            return 0;
+                          document.getElementById("boton").disabled=true;
+      		            return false;
    	                    }
                            if (document.fvalida.celular.value.length==0){
       		            alert("El campo celular es requerido por favor ingrese sus datos.")
-      		            document.fvalida.celular.focus()
-      		            return 0;
+      		            document.fvalida.celular.focus();
+                          document.getElementById("boton").disabled=true;
+      		            return false;
    	                    }
                         if (document.fvalida.correo.value.length==0){
       		            alert("El campo correo es requerido por favor ingrese sus datos.")
-      		            document.fvalida.correo.focus()
-      		            return 0;
+      		            document.fvalida.correo.focus();
+                        document.getElementById("boton").disabled=true;
+      		            return false;
    	                    }
-                        alert("Muchas gracias registrarse al webinar");
+                           document.getElementById("boton").disabled=false;
+                           alert("Muchas gracias registrarse al webinar");
    	                        //document.fvalida.submit();
-                    }
+                    } */
+                  
+                    
                     
 </script>
                   
