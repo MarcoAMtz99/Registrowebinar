@@ -10,8 +10,9 @@
 
 		<title>Webinar. Transformación Digital </title>
 
-        <!-- Bootstrap -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        {{-- <link href="css/bootstrap.min.css" rel="stylesheet"> --}}
         <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
        
 
@@ -465,7 +466,7 @@
 		</footer>
 	<!-- Copyright Ends	-->
 	<!-- Template JS Files -->
-	<script src="js/jquery-1.12.4.min.js"></script>
+	{{-- <script src="js/jquery-1.12.4.min.js"></script>
 	<script src="js/jquery-migrate-1.4.1.min.js"></script>	
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
@@ -475,7 +476,7 @@
 	<script src="js/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?v=3&amp;sensor=false"></script>
 	<script src="js/map.js"></script>	
-	<script src="js/custom.js"></script>	
+	<script src="js/custom.js"></script> --}}	
 	</body>
     
     

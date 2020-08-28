@@ -10,37 +10,38 @@
                     </div>
                 @endif 
                 <form action="{{route('registro.store')}}" method="POST" id="miForm" name="fvalida"  onsubmit="return validar()">
-                    <div class="col-sm-6 col-xs-12">
+                    <div class="col-sm-6 ">
                          <div class="form-group">
                                 <input type="text" name="nombre" id="nombre "class="form-control" value="{{old('nombre')}}" placeholder="*Nombre">
                                 <span class="help-block">{{$errors->first('nombre')}} </span>
                             </div>
                     </div>
-                    <div class="col-sm-6 col-xs-12">
+                    <div class="col-sm-6 ">
                         <div class="form-group">
                     <input type="text" name="apellidos" id="apellidos "class="form-control" value="{{old('apellidos')}}" placeholder="*Apellidos">      
                                     <span class="help-block">{{$errors->first('apellidos')}} </span>
                             </div>
                     </div>
-                        <div class="col-sm-6 col-xs-12">                      
+                        <div class="col-sm-6 ">                      
                     <div class="form-group">
+
                         <input type="number" name="celular" id="celular "class="form-control" value="{{old('celular')}}" placeholder="*Celular / Whatsapp">
                         <span class="help-block">{{$errors->first('celular')}} </span>
                     </div>
                         </div> 
-                        <div class="col-sm-6 col-xs-12"> 
+                        <div class="col-sm-6 "> 
                     <div class="form-group">
                         <input type="text" name="correo" id="correo " class="form-control" value="{{old('correo')}}" placeholder="*Correo electronico">
                         <span class="help-block">{{$errors->first('correo')}} </span>
                     </div>
                         </div>  
-                        <div class="col-sm-6 col-xs-12">
+                        <div class="col-sm-6 ">
                     <div class="form-group">
                         <input type="text" name="telefono" class="form-control" value="{{old('telefono')}}" placeholder="Telefono">
                         <span class="help-block">{{$errors->first('telefono')}} </span>
                     </div>
                         </div>
-                        <div class="col-sm-6 col-xs-12"> 
+                        <div class="col-sm-6 "> 
                     <div class="form-group">
                         <input type="text" name="empresa" class="form-control" value="{{old('empresa')}}" placeholder="Nombre de la empresa">
                         <span class="help-block">{{$errors->first('empresa')}} </span>
