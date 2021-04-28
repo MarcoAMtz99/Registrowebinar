@@ -22,6 +22,8 @@ class CreateRegistrosTable extends Migration
             $table->string('telefono');
             $table->string('empresa');
             $table->string('puesto');
+            $table->string('Comentario');
+            $table->integer('factura');
             $table->timestamps();
         });
     }

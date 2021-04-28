@@ -8,7 +8,7 @@
 		<meta name="description" content="">
 		<meta name="author" content="">
 
-		<title>Webinar. Transformación Digital </title>
+		<title>Taller Creando Nuevos Enfoques de Trabajo </title>
 
 		<!-- Bootstrap -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -89,109 +89,213 @@
 		</section>
 	<!-- Main Banner Ends -->
      
-     
-   
+    <!-- About Section Starts -->
+		<section class="section-area">
+		<!-- Nested Container Starts -->
+			<div class="container text-center-xs">
+			<!-- Nested Row Starts -->
+				<div class="row">
+				<!-- Content Starts -->
+					<div class="col-lg-4 col-md-5 col-sm-6 col-xs-12">
+						<h3 class="main-heading-1 text-spl-color text-normal text-uppercase">Taller</h3>
+						<p>
+							Hoy en día las empresas están enfrentando cambios drásticos en la forma de trabajar y ofrecer sus servicios, tanto a sus clientes como a sus empleados. Por esta razón se requiere tener una cultura laboral  basado en competencias, combinada  con una infraestructura digital, procesos y aplicaciones de vanguardia  que estén alienadas a la estrategia del negocio.
 
+						</p>
+						<p>
+							El taller “Creando Nuevos Enfoques de Trabajo” está enfocado para que los participantes conozcan  las diferentes técnicas y procesos  de trabajo y tecnológicas  que están llevando a cabo las empresas líderes en el mercado mundial. A lo largo del taller se explicará y se darán ejemplos prácticos de como poder aplicar estas tendencias en las empresas para contar  con las herramientas necesarias que las harán estar a la vanguardia en su sector.
 
-
-
-
-<!-- Breadcrumb Ends -->	
-	<!-- Main Container Starts -->
-		<div class="main-container container text-center-xs">
-		<!-- Nested Row Starts -->
-			<div class="row">
-			<!-- Mainarea Starts -->
-				<div class="col-sm-8 col-xs-12">
-					<h4 class="main-heading-1 text-spl-color text-uppercase text-normal">Registro sin costo</h4>
-					<p class="lead">
-						Bienvenido al regístro para el Webinar: <br>
-                        “Transformación Digital. Hacia una nueva cultura laboral”. <br>
-                        Al momento de finalizar tu registro  te enviaremos por correo electrónico o WhatsApp la liga con tu acceso al evento.
-					</p>
-					<p class="text-medium">
-						El Webinar es gratuito.
-					</p>
-				<!-- Contact Form Wrap Starts -->
-				@yield('content')
-
-				<!-- Contact Form Wrap Ends -->
+						</p>
+						<br>
+					</div>
+				<!-- Content Ends -->
+				<!-- Divider For Small Screen Starts -->
+					<div class="col-xs-12 hidden visible-xs">
+						<p><br></p>
+					</div>
+				<!-- Divider For Small Screen Ends -->
+				<!-- Media Starts -->
+					<div class="col-md-7 col-sm-6 col-xs-12 col-lg-offset-1">
+						<img src="{{asset('images/descripcion.jpg')}}" alt="nuevo enfoque de trabajo" class="img-responsive img-center">
+					</div>
+				<!-- Media Ends -->
 				</div>
+			<!-- Nested Row Ends -->
+			</div>
+		<!-- Nested Container Ends -->
+		</section>
+	<!-- About Section Ends -->
+     
+   @yield('content')
 
 
 
 
+
+
+<!-- Newsletter Subscription Section Starts -->
+		<section class="newsletter-bar text-lite-color text-center-sm text-center-xs">
+		<!-- Nested Container Starts -->
+			<div class="container">
+			<!-- Nested Row Starts -->
+				<div class="row">
+					<div class="col-lg-6 col-md-4 col-xs-12">
+						<div class="clearfix">
+							<h4 class="pull-left-lg text-normal"><i class="fa fa-check-square"></i>Inscribete</h4>
+				                            
+                            
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-8 col-xs-12">
+						<form class="row">
+							<div class="col-sm-8 col-xs-12">
+								<div class="col-sm-4 col-xs-12">
+							<a class="btn btn-secondary animation text-uppercase" href="{{route('registro.create')}}">Pago</a>
+							</div>
+							</div>
+							<div class="col-sm-4 col-xs-12">
+								<a class="btn btn-secondary animation text-uppercase" href="temario.pdf">Temario</a>
+							</div>
+
+
+
+						</form>
+					</div>
+				</div>
+			<!-- Nested Row Ends -->			
+			</div>
+		<!-- Nested Container Ends -->
+		</section>
+	<!-- Newsletter Subscription Section Ends -->
+
+
+
+
+
+<!-- Newsletter Subscription Section Starts -->
+		<section class="newsletter-bar text-lite-color text-center-sm text-center-xs">
+		<!-- Nested Container Starts -->
+			<div class="container">
+			<!-- Nested Row Starts -->
+				<div class="row">
+					<div class="col-lg-6 col-md-4 col-xs-12">
+						<div class="clearfix">
+							<h4 class="pull-left-lg text-normal"><i class="fa fa-calendar"></i>Martes 11 de Mayo 2021</h4>
+							<h6 class="pull-right-lg text-light hidden visible-lg visible-sm"><em>de 9:00 AM a 2:00 PM   <br class="hidden-sm hidden-xs">inscribete para recibir la Liga</em></h6>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-8 col-xs-12">
+						<form class="row">
+	
+							<div class="col-sm-4 col-xs-12">
+								<a class="btn btn-secondary animation text-uppercase" href="pago.html">Vía ZOOM</a>
+							</div>
+						</form>
+					</div>
+				</div>
+			<!-- Nested Row Ends -->			
+			</div>
+		<!-- Nested Container Ends -->
+		</section>
+	<!-- Newsletter Subscription Section Ends -->
+
+
+
+
+
+                   	<!-- Main Container Starts -->
+		<div class="main-container container">
+		<!-- Nested Row Starts -->
+    
+
+
+     <!-- Nested Row Starts -->
+			<div class="row text-center-xs">
+			<!-- Content Starts -->
+				<div class="col-sm-7 col-xs-12">
+                <p class="lead">
+						
+					</p>
+	             
+              <h5 class="main-heading-1 text-spl-color text-normal text-center-xs">Objetivo del taller</h4>
+   
+                
+   				<p class="lead">
+						Al terminar el taller, el participante conocerá las principales técnicas y tendrá los conocimientos necesarios para poder iniciar la transformación digital de su organización. .
+					</p>
+					<p> NAsí los empleados podrán colaborar en un ambiente basado en competencias y nuevas tecnologías digitales. Y sobre todo tomando en cuenta sus necesidades para dar un mejor desempeño. 
+                   </p>
+					
+				</div>
+			<!-- Content Ends -->
+			<!-- Image Media Starts -->
+			  <div class="col-sm-5 col-xs-12">
+               <p class="lead">			</p>
+
+					<p class="hidden visible-xs"><br></p>
+					<img src="images/equipo.jpg" alt="desarrollo de software" class="img-responsive img-style-1 img-center-xs">
+				</div>
+			<!-- Image Media Ends -->
+    		</div>
+		<!-- Nested Row Ends -->
+	
+ 	</div>
+
+
+
+
+
+
+
+
+
+        <!-- Nested Container Starts -->
+		<div class="main-container container">
+		<!-- Nested Row Starts -->
+			<div class="row text-center-xs">
+			<!-- Mainarea Starts -->
+				<div class="col-ld-9 col-md-8 col-sm-7 col-xs-12">
+					<div class="box-4 row">
+						<div class="col-sm-6 col-xs-12">
+							<img src="images/beneficios.jpg" alt="Image" class="img-responsive img-center-xs img-style-1">
+						</div>
+						<div class="col-sm-6 col-xs-12">
+							<h5 class="text-medium">A quién va dirigido</h5>
+							<p>
+								Este taller esta dirigido a las siguientes personas 
+							</p>
+							<ul class="list-unstyled list-style-3 text-grey-color">
+								<li>Directores de empresas.</li>
+								<li>Directores / Gerentes de sistemas</li>
+								<li>Ingenieros en sistemas</li>
+								<li>Directores / Gerentes de Recursos Humanos</li>
+								<li>Dueños de empresas</li>
+							</ul>
+						</div>
+					</div>
+				</div>
 			<!-- Mainarea Ends -->
-			<!-- Spacer For Extra Small Screen Starts -->
+			<!-- Spacer Starts -->
 				<div class="col-xs-12 hidden visible-xs">
 					<p class="spacer-small"></p>
 				</div>
-			<!-- Spacer For Extra Small Screen Ends -->
+			<!-- Spacer Ends -->
 			<!-- Sidearea Starts -->
-				<div class="col-sm-4 col-xs-12">
-				<!-- Headquarters Starts -->
-					<div class="sblock-2">
-						<h5>Datos del Evento</h5>
-						<ul class="list-unstyled address-list">
-							<li class="clearfix">
-								<i class="fa fa-calendar-check-o pull-left"></i> 
-								<span class="pull-left">Fecha: Lunes 31 de Agosto de 2020</span>
-							</li>
-                            
-                            <li class="clearfix">
-								<i class="fa fa-clock-o pull-left"></i> 
-								<span class="pull-left">Hora: 7:00 PM</span>
-							</li>
-                              <li class="clearfix">
-								<i class="fa fa-map-marker pull-left"></i> 
-								<span class="pull-left">Lugar: ZOOM</span>
-							</li>
-							  <li class="clearfix">
-								<i class="fa fa-whatsapp pull-left"></i> 
-								<span class="pull-left">WhatsApp Contacto: 55 69 07 31 62</span>
-							</li>
-                            
-							<li>
-								<i class="fa fa-envelope"></i> 
-								<a href="mailto:info@byw-si.com.mx">webinars@byw-si.com.mx</a>
-							</li>
-						</ul>
+				<div class="col-ld-3 col-md-4 col-sm-5 col-xs-12">
+					<div class="sblock-1">
+						<h5 class="text-medium">Más información</h5>
+						<p>
+							<em>Si desea más información acerca del taller, por favor sientase en confianza de ponerse en contacto con nosotros al correo electrónico de taller@byw-si.com.mx o al Whatsapp 5569073162 y con gusto le apoyaremos</em>
+						</p>
+						
 					</div>
-				<!-- Headquarters Ends -->
-				
-				<!-- Follow Us Starts -->
-					<h5 class="sub-heading-2 text-normal">Siguenos</h5>
-					<ul class="list-unstyled list-inline contact-sm-links animation">
-						<li><a href="https://www.facebook.com/ByW.soluciones.integrales"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="https://twitter.com/ByWSoluciones"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="https://www.instagram.com/byw.si/?hl=es-la"><i class="fa fa-instagram"></i></a></li>
-					</ul>
-				<!-- Follow Us Ends -->
 				</div>
 			<!-- Sidearea Ends -->
 			</div>
 		<!-- Nested Row Ends -->
-		</div>
-	<!-- Main Container Ends -->
-	<!-- Map Starts -->
-		<div class="contact-page-map"></div>
-	<!-- Map Ends -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
+    
+    
 
 
 
@@ -212,19 +316,19 @@
 				<div class="col-md-6 col-xs-12">
 					<div class="bio-box-1 two-col row">
 						<div class="col-sm-6 col-xs-12">
-							<img src="{{asset('images/team/Luis_paniagua.jpg')}}" alt="Image" class="img-responsive img-center-xs rc-5">
+							<img src="images/team/Luis_paniagua.jpg" alt="Image" class="img-responsive img-center-xs rc-5">
 						</div>
 						<div class="col-sm-6 col-xs-12">
 							<h5 class="text-normal">Msc. Luis H. Paniagua</h5>
 							<p class="designation text-light text-grey-color">Msc. Digital Systems Engineering</p>
 							<p class="text-grey-color">
-								Director Ejecutivo de B&W Soluciones Integrales SA de CV.
+								Director de B&W Soluciones Integrales SA de CV.
 							</p>
 							<p class="text-grey-color">
-								Experto en las áreas de innovación tecnológica, inteligencia artificial, gestión de proyectos de TI, data analysis.
+								Experto en Tecnologías de la Información, con mas de 20 años de experiencia.
 							</p>
                             	<p class="text-grey-color">
-									Cuenta con más de 20 años de experiencia en el área de Tecnologías de la Información.
+								Ingeniero en Sistemas Electrónicos del ITESM, maestrpia en Ingeniería en Sistemas Sigitales por parte de Heriot Watt University y Diplomado en Administración Financiera por parte del ITESM.
 							</p>
 							<div class="clearfix">
 								
@@ -238,20 +342,20 @@
 				<div class="col-md-6 col-xs-12">
 					<div class="bio-box-1 two-col row">
 						<div class="col-sm-6 col-xs-12">
-							<img src="{{asset('images/team/Enrique_cortes.jpg')}}" alt="Image" class="img-responsive img-center-xs rc-5">
+							<img src="images/team/Enrique_cortes.jpg" alt="Image" class="img-responsive img-center-xs rc-5">
 						</div>
 						<div class="col-sm-6 col-xs-12">
-							<h5 class="text-normal">Mstro. Enrique Cortés</h5>
-                           	<p class="designation text-light text-grey-color">Doctorante en teoría psicoanálitica</p>
+							<h5 class="text-normal">Mstro. Enrique Cortes</h5>
+                           	<p class="designation text-light text-grey-color">Doctorante en Teoría psicoanalítica </p>
 							<p class="text-grey-color">
-								Director RH B&W Soluciones Integrales SA de CV.
+								Director de RRHH en B&W Soluciones Integrales SA de CV
 							</p>
 							<p class="text-grey-color">
-								Experto en capacitación de equipo de trabajo de alto desempeño, ETD.
+								Experto en el estudio y análisis de la gestión por competencias y el trabajo colaborativo.
+                                Experto en Entrevistas y evaluación por competencias 
 							</p>
                             	<p class="text-grey-color">
-									Evaluación por Competencias, Atención psicológica en depresión laboral, bajo desempeño y resolución de
-									conflictos.
+								Maestro en Terapia Psicoanalítica.
 							</p>
 							<div class="clearfix">
 								
@@ -298,53 +402,6 @@
        
        
          
-        <!-- Nested Container Starts -->
-		<div class="main-container container">
-		<!-- Nested Row Starts -->
-			<div class="row text-center-xs">
-			<!-- Mainarea Starts -->
-				<div class="col-ld-9 col-md-8 col-sm-7 col-xs-12">
-					<div class="box-4 row">
-						<div class="col-sm-6 col-xs-12">
-							<img src="{{asset('images/beneficios.jpg')}}" alt="Image" class="img-responsive img-center-xs img-style-1">
-						</div>
-						<div class="col-sm-6 col-xs-12">
-							<h5 class="text-medium">A quién va dirigido</h5>
-							<p>
-								Este Webinar esta dirigido a las siguientes personas 
-							</p>
-							<ul class="list-unstyled list-style-3 text-grey-color">
-								<li>Directores de empresas.</li>
-								<li>Directores / Gerentes de sistemas</li>
-								<li>Ingenieros en sistemas</li>
-								<li>Directores / Gerentes de Recursos Humanos</li>
-								<li>Personas que deseen conocer mas acerca de la Transformación Digital</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			<!-- Mainarea Ends -->
-			<!-- Spacer Starts -->
-				<div class="col-xs-12 hidden visible-xs">
-					<p class="spacer-small"></p>
-				</div>
-			<!-- Spacer Ends -->
-			<!-- Sidearea Starts -->
-				<div class="col-ld-3 col-md-4 col-sm-5 col-xs-12">
-					<div class="sblock-1">
-						<h5 class="text-medium">Más información</h5>
-						<p>
-							<em>Si desea más información acerca del webinar o de nuestra empresa, por favor sientase en confianza de ponerse en contacto con nosotros al correo electrónico de info@byw-si.com.mx y con gusto le apoyaremos</em>
-						</p>
-						
-					</div>
-				</div>
-			<!-- Sidearea Ends -->
-			</div>
-		<!-- Nested Row Ends -->
-    
-    
-    
     
     
     
@@ -377,7 +434,7 @@
 					<div class="col-md-3 col-sm-6 col-xs-12">
 						<div class="foot-info">
 							<p>
-								<img src="{{asset('images/byw.png')}}" alt="B&W Soluciones Integrales" class="img-responsive img-center-xs">
+								<img src="images/byw.png" alt="B&W Soluciones Integrales" class="img-responsive img-center-xs">
 							</p>
 							<br>
 							<p class="text-light">
@@ -466,9 +523,8 @@
 		</footer>
 	<!-- Copyright Ends	-->
 	<!-- Template JS Files -->
-	{{-- <script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/jquery-1.12.4.min.js"></script>
 	<script src="js/jquery-migrate-1.4.1.min.js"></script>	
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/plugins/backstretch/jquery.backstretch.min.js"></script>
 	<script src="js/plugins/shuffle/jquery.shuffle.modernizr.min.js"></script>
@@ -476,11 +532,12 @@
 	<script src="js/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?v=3&amp;sensor=false"></script>
 	<script src="js/map.js"></script>	
-	<script src="js/custom.js"></script> --}}	
+	<script src="js/custom.js"></script>	
 	</body>
     
     
-	
+    
+    
     
     
     
@@ -488,4 +545,3 @@
     
     
 </html>
-
