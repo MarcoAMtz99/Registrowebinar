@@ -12,20 +12,21 @@
                 <div class="col-sm-6 ">
                     Costo del taller: $660.00 pesos IVA Incluido 
                     (*Aplican descuento para socios Coparmex, miembros de IMEXGO, miembros de Ex-a-Tec)
-
-                    Formas de Pago
-
+                        <br>
+                   <strong> Formas de Pago</strong>
+                    <br>
                     1) Transferencia o depósito en efectivo
-
+                    <br>
                     Nombre de la cuenta: B&W SOLUCIONES INTEGRALES SA DE CV
                     BANCO: BANAMEX
                     CUENTA: 1031261
                     CLABE: 002180700410312616
-
+                    <br>
                     2) Pago con tarjeta de crédito o débito
                     El pago con tarjeta de crédito o débito se hace mediante la aplicación de CLIP, por lo que si desea usar este método de pago, le solicitamos nos envíe un WhatsApp al 5569073162 donde le indicaremos la liga para realizar el pago. Aceptamos todas las tarjetas de crédito.
-
+                    <br>
                 </div>
+                <hr>
                 <form action="{{route('registro.store')}}" method="POST" id="miForm" name="fvalida"  onsubmit="return validar()">
                     <div class="col-sm-6 ">
                          <div class="form-group">
