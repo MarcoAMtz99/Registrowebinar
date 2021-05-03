@@ -154,7 +154,7 @@
 							</div>
 							</div>
 							<div class="col-sm-4 col-xs-12">
-								<a class="btn btn-secondary animation text-uppercase" href="temario.pdf">Temario</a>
+								<a class="btn btn-secondary animation text-uppercase" href="{{asset('files/temario.pdf')}}">Temario</a>
 							</div>
 
 
@@ -188,7 +188,7 @@
 						<form class="row">
 	
 							<div class="col-sm-4 col-xs-12">
-								<a class="btn btn-secondary animation text-uppercase" href="pago.html">Vía ZOOM</a>
+								<a class="btn btn-secondary animation text-uppercase" href="{{route('registro.create')}}">Vía ZOOM</a>
 							</div>
 						</form>
 					</div>
@@ -233,7 +233,7 @@
                <p class="lead">			</p>
 
 					<p class="hidden visible-xs"><br></p>
-					<img src="images/equipo.jpg" alt="desarrollo de software" class="img-responsive img-style-1 img-center-xs">
+					<img src="{{asset('images/equipo.jpg')}}" alt="desarrollo de software" class="img-responsive img-style-1 img-center-xs">
 				</div>
 			<!-- Image Media Ends -->
     		</div>

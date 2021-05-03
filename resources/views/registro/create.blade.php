@@ -9,6 +9,23 @@
             <div class="alert alert-success">{{session('status')}}
                     </div>
                 @endif 
+                <div class="col-sm-6 ">
+                    Costo del taller: $660.00 pesos IVA Incluido 
+                    (*Aplican descuento para socios Coparmex, miembros de IMEXGO, miembros de Ex-a-Tec)
+
+                    Formas de Pago
+
+                    1) Transferencia o depósito en efectivo
+
+                    Nombre de la cuenta: B&W SOLUCIONES INTEGRALES SA DE CV
+                    BANCO: BANAMEX
+                    CUENTA: 1031261
+                    CLABE: 002180700410312616
+
+                    2) Pago con tarjeta de crédito o débito
+                    El pago con tarjeta de crédito o débito se hace mediante la aplicación de CLIP, por lo que si desea usar este método de pago, le solicitamos nos envíe un WhatsApp al 5569073162 donde le indicaremos la liga para realizar el pago. Aceptamos todas las tarjetas de crédito.
+
+                </div>
                 <form action="{{route('registro.store')}}" method="POST" id="miForm" name="fvalida"  onsubmit="return validar()">
                     <div class="col-sm-6 ">
                          <div class="form-group">
@@ -30,8 +47,12 @@
                     </div>
                         </div> 
                         <div class="col-sm-6 "> 
-                    <div class="form-group">
-                        <input type="text" name="correo" id="correo " class="form-control" value="{{old('correo')}}" placeholder="*Correo electronico">
+                   <!--  <div class="form-group">
+                        <input type="mail" name="correo" id="correo" class="form-control" value="{{old('correo')}}" placeholder="*Correo electronico">
+                        <span class="help-block">{{$errors->first('correo')}} </span>
+                    </div> -->
+                     <div class="form-group">
+                        <input type="mail" name="Correo" id="Correo" class="form-control" value="{{old('Correo')}}" placeholder="*Correo electronico ">
                         <span class="help-block">{{$errors->first('correo')}} </span>
                     </div>
                         </div>  
@@ -57,11 +78,11 @@
                         <span class="help-block">{{$errors->first('comentario')}} </span>
                     </div>
                   
-                      <div class="form-group">
+                    <!--   <div class="form-group">
                         <label for="archivo"><b>Archivo: </b></label><br>
                         <input type="file" name="archivo" required>
                         <span class="help-block">{{$errors->first('archivo')}} </span>
-                    </div>
+                    </div> -->
 
 
 
@@ -89,32 +110,32 @@
 
                                 <div class="card card-body">
                                     <div class="row">
-                                        <div class="col-12 col-md-3 mt-3">
+                                        <!-- <div class="col-12 col-md-3 mt-3">
                                             <label for="" class="text-uppercase text-muted">TIPO PERSONA</label>
                                             <input type="text" class="form-control" id="tipoPersona" name="tipo_persona">
-                                        </div>
+                                        </div> -->
                                         <div class="col-12 col-md-3 mt-3">
                                             <label for="" class="text-uppercase text-muted">NOMBRE / RAZÓN
                                                 SOCIAL</label>
                                             <input type="text" class="form-control" id="nombreORazonSocial" name="nombre_o_razon_social">
                                         </div>
-                                        <div class="col-12 col-md-3 mt-3">
+                                        <!-- <div class="col-12 col-md-3 mt-3">
                                             <label for="" class="text-uppercase text-muted">RÉGIMEN FISCAL
                                                 SOCIAL</label>
                                             <input type="text" class="form-control" id="regimeFiscal" name="regimen_fiscal">
-                                        </div>
-                                        <div class="col-12 col-md-3 mt-3">
+                                        </div> -->
+                                        <!-- <div class="col-12 col-md-3 mt-3">
                                             <label for="" class="text-uppercase text-muted">CORREO</label>
                                             <input type="text" class="form-control" id="correo" name="correo">
-                                        </div>
+                                        </div> -->
                                         <div class="col-12 col-md-3 mt-3">
                                             <label for="" class="text-uppercase text-muted">RFC</label>
                                             <input type="text" class="form-control" id="rfc" name="rfc">
                                         </div>
-                                        <div class="col-12 col-md-3 mt-3">
+                                       <!--  <div class="col-12 col-md-3 mt-3">
                                             <label for="" class="text-uppercase text-muted">HOMOCLAVE</label>
                                             <input type="text" class="form-control" id="homoclave" name="homoclave">
-                                        </div>
+                                        </div> -->
                                         <div class="col-12 col-md-3 mt-3">
                                             <label for="" class="text-uppercase text-muted">CALLE</label>
                                             <input type="text" class="form-control" id="calle" name="calle">
@@ -139,7 +160,15 @@
                                             <label for="" class="text-uppercase text-muted">Delegación o municipio</label>
                                             <input type="text" class="form-control" id="alcaldia_o_municipio" name="alcaldia_o_municipio">
                                         </div>
+                                         <div class="col-12 col-md-3 mt-3">
+                                            <label for="" class="text-uppercase text-muted">Colonia</label>
+                                            <input type="text" class="form-control" id="colonia" name="colonia">
+                                        </div>
                                         <div class="col-12 col-md-3 mt-3">
+                                            <label for="" class="text-uppercase text-muted">Estado</label>
+                                            <input type="text" class="form-control" id="estado" name="estado">
+                                        </div>
+                                       <!--  <div class="col-12 col-md-3 mt-3">
                                             <label for="" class="text-uppercase text-muted">Uso cfdi</label>
                                             <select name="uso_cfdi" class="form-control" id="uso_cfdi">
                                                 <option value="">Seleccionar</option>
@@ -165,7 +194,7 @@
                                                 <option value="I08 - Otra maquinaria y equipo">I08 - Otra maquinaria y equipo</option>
                                                 <option value="P01 - Por definir">P01 - Por definir</option>
                                             </select>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
                            
@@ -199,15 +228,15 @@
                             var apellidos = document.fvalida.apellidos.value.length;
                             var celular = document.fvalida.celular.value.length;
                                 var correo = document.fvalida.correo.value.length;
-                                 if (nombre === 0 || apellidos === 0 || celular === 0 || correo === 0) {
-                                     alert("Completa todos los campos requeridos \n *NOMBRE *APELLIDOS *CELULAR *CORREO");
-                                     /* document.fvalida.nombre.focus();
-                                     document.fvalida.apellidos.focus();
-                                     document.fvalida.celular.focus();
-                                     document.fvalida.correo.focus(); */
-                                     return false;
-                                             }else{ return true;
-                                        }
+                                 // if (nombre === 0 || apellidos === 0 || celular === 0 || correo === 0) {
+                                 //     alert("Completa todos los campos requeridos \n *NOMBRE *APELLIDOS *CELULAR *CORREO");
+                                 //      document.fvalida.nombre.focus();
+                                 //     document.fvalida.apellidos.focus();
+                                 //     document.fvalida.celular.focus();
+                                 //     document.fvalida.correo.focus(); 
+                                 //     return false;
+                                 //             }else{ return true;
+                                 //        }
                                         
                                     }
 

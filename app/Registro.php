@@ -15,6 +15,8 @@ class Registro extends Model
             'correo',
             'telefono',
             'empresa',
-            'puesto'
+            'puesto',
+            'Comentario',
+            'factura'
     ];
 }
